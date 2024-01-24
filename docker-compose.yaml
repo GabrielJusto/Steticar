@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  api_service:
+    build: .
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - springapimysql-net  
+    environment:
+      - DB_CONNECTION=jdbc:mysql://mysqldb:3306/steticar
+      
+  mysqldb:
+    container_name: mysqldb
+    image: "mysql:8.0"
+    restart: always
+    ports:
+      - 3306:3306 
+    networks:
+      - springapimysql-net  
+    environment:
+      MYSQL_DATABASE: steticar
+      MYSQL_USER: master
+      MYSQL_PASSWORD: master
+      MYSQL_ROOT_PASSWORD: master
+    
+  
+networks:
+  springapimysql-net:
