@@ -1,4 +1,4 @@
-package br.com.bonatto.controller;
+package br.com.bonatto.steticar.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

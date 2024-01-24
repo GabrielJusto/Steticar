@@ -1,0 +1,7 @@
+
+
+CREATE TABLE usuario (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    login VARCHAR(255),
+    senha VARCHAR(255)
+)
