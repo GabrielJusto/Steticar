@@ -1,0 +1,17 @@
+CREATE TABLE cliente (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    cpfCnpj VARCHAR(14) NOT NULL
+
+);
+
+CREATE TABLE carro(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    marca VARCHAR(255) NOT NULL,
+    modelo VARCHAR(255) NOT NULL,
+    placa VARCHAR(255) NOT NULL,
+    km DOUBLE,
+    carroId INT
+
+);
+
